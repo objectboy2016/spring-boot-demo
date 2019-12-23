@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="simple-demo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/simple_demo_jar</output-path>
+    <root id="archive" name="simple-demo.jar">
+      <element id="module-output" name="simple-demo" />
+      <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:unknown" />
+    </root>
+  </artifact>
+</component>
