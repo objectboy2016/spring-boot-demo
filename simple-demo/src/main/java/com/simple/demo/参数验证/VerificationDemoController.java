@@ -1,4 +1,4 @@
-package com.simple.demo;
+package com.simple.demo.参数验证;
 
 
 import com.simple.demo.entity.User;
@@ -12,9 +12,9 @@ import javax.validation.constraints.NotBlank;
 
 @RestController
 @Validated
-public class HomeController {
+public class VerificationDemoController {
 
-    @GetMapping("/home/index")
+    @GetMapping("/verificationDemo")
     public String getIndex(){
         return "hello world";
     }
@@ -24,7 +24,7 @@ public class HomeController {
      * @param user
      * @return
      */
-    @GetMapping("/home/user")
+    @GetMapping("/verificationDemo/user")
     public  String getUser(@Validated User user, @Validated UserInfo userInfo) {
         return "实体验证";
     }
@@ -34,7 +34,7 @@ public class HomeController {
      * @param user
      * @return
      */
-    @GetMapping("/home/ordinaryParameters")
+    @GetMapping("/verificationDemo/ordinaryParameters")
     public String ordinaryParameters( @NotBlank(message = "name不能为空") String name, @Min(value = 1,message = "age最小为1") String age){
         return "普通参数验证";
     }
