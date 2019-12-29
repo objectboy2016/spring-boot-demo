@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
 @Configuration
-public class EnvConfig {
+public class EnvironmentConfig {
     @Autowired
     private Environment environment;
 

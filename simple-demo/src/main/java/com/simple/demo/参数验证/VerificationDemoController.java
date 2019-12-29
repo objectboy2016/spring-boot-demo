@@ -14,7 +14,7 @@ import javax.validation.constraints.NotBlank;
 @Validated
 public class VerificationDemoController {
 
-    @GetMapping("/verificationDemo")
+    @GetMapping("/verificationDemo/index")
     public String getIndex(){
         return "hello world";
     }

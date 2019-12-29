@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/configDemo")
 public class ConfigDemoController {
     @Autowired
-    private EnvConfig envConfig;
+    private EnvironmentConfig environmentConfig;
     @Value("${local.user.name}")
     private String userName;
     @Autowired
@@ -33,7 +33,7 @@ public class ConfigDemoController {
      */
     @GetMapping("/username_env")
     public String getUserName_Environment() {
-        return envConfig.getUserName();
+        return environmentConfig.getUserName();
     }
 
     /**
